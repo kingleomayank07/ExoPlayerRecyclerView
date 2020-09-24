@@ -246,12 +246,6 @@ public class VideoPlayerRecyclerView extends RecyclerView {
         } catch (IndexOutOfBoundsException e) {
             e.printStackTrace();
         }
-        /* for (int i = 0; i < mediaObjects.size(); i++) {
-            while (i == LIST_ADD)
-                if (i == LIST_ADD) {
-
-                }
-        }*/
         videoPlayer.setMediaSource(concatenatingMediaSource);
         videoPlayer.prepare();
     }
