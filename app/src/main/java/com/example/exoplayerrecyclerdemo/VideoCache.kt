@@ -12,7 +12,7 @@ object VideoCache {
     fun getInstance(context: Context): SimpleCache? {
         if (sDownloadCache == null) sDownloadCache =
             SimpleCache(
-                File(context.cacheDir, "exoCache"),
+                File(context.cacheDir, "exoPlayerRecycler"),
                 LeastRecentlyUsedCacheEvictor(200 * 1024 * 1024)
             )
         return sDownloadCache
